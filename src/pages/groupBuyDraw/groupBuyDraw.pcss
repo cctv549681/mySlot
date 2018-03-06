@@ -1,0 +1,210 @@
+@import "../../common/common.pcss";
+body{
+    overflow-y: auto;
+}
+.container{
+    width:750px;
+    height:1334px;
+    min-height:100%;
+    background:url('../../../react-externals/images/draw/pic_background@2x.png');
+    background-size: 100%;
+    text-align:center;
+    position: relative;
+    .countdownInfo{
+        width: 501px;
+        height: 59px;
+        top: 58px;
+        position: absolute;
+        font-size: 32px;
+        left:calc(50% - 250.5px);
+        text-align: center;
+        color: #fff;
+        background: #41a7e3;
+        line-height: 59px;
+        border-radius: 12px;
+    }
+    .countdown{
+        display:inline-block;
+        margin-left:10px;
+    }
+    .lotteryNumberInfo{
+        color:#c45d00;
+        font-size:30px;
+        position: relative;
+        top: 334px;
+        display: inline;
+    }
+    .lotteryNumber{
+        color:#e2162f;
+        font-size:32px;
+    }
+    .slots{
+        position: absolute;
+        top: 536px;
+        text-align: center;
+        width: 100%;
+    }
+    .start{
+        background:url('../../../react-externals/images/draw/icon_draw-lottery_nomal@2x.png');
+        width: 226px;
+        height: 174px;
+        background-size: cover;
+        border: 0;
+        position: absolute;
+        top: 270px;
+        left:260px;
+    }
+    .disabledStart{
+        background-image:url('../../../react-externals/images/draw/icon_draw-lottery_press@2x.png');
+    }
+    .buttons{
+        top: 1045px;
+        position: absolute;
+        left: calc(50% - 288px);
+    }
+    .dialogButton{
+        width: 184px;
+        border: 0;
+        height: 82px;
+        background-color: rgba(0, 0, 0, 0);
+        background-size: 100%;
+        margin: 0 4px;
+    }
+    .rules{
+        background-image:url('../../../react-externals/images/draw/icon_activity-description@2x.png');
+    }
+    .prizes{
+        background-image:url('../../../react-externals/images/draw/icon_Prizes@2x.png');
+    }
+    .winners{
+        background-image:url('../../../react-externals/images/draw/icon_The-winners@2x.png');
+    }
+    
+}
+.alertConfirm{
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0);
+    background-image:url('../../../react-externals/images/draw/icon_delete.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+}
+:global{
+    .am-modal{
+        width:640px!important;
+        max-height:90%;
+    }
+    .am-modal-content{
+        padding-top:0;
+        border-radius:0;
+        background: rgba(0, 0, 0, 0);
+    }
+    .am-modal-header{
+        background-image:url('../../../react-externals/images/draw/background.png');
+        padding-top: 30px;
+        border-radius: 14px 14px 0 0;
+        background-size: cover;
+    }
+    .am-modal-title{
+        color: #FFF;
+    }
+    .am-modal-body{
+        border-radius: 0 0 14px 14px;
+        background: #FFF;
+        
+        color:#222;
+        font-size:26px;
+        line-height:40px;
+    }
+    .am-modal.am-modal-transparent .am-modal-content .am-modal-body{
+        padding: 40px 36px;
+    }
+    .am-modal-footer{
+        margin-top:30px;
+    }
+    .am-modal-footer .am-modal-button{
+        border-top:0;
+    }
+    .am-modal-button-active{
+        background: rgba(0, 0, 0, 0);
+    }
+    
+}
+.prizeList{
+    .prizeItem{
+        font-size:30px;
+        color:#d40625;
+        line-height:40px;
+    }
+    .prizeProduct{
+        font-size:30px;
+        color:#222;
+        line-height:40px;
+    }
+    .quantity{
+        font-size:24px;
+        color:#888;
+        line-height:40px;
+    }
+}
+.winnersTable{
+    width: 100%;
+    tr:nth-child(2n-1) {
+        background: #fff55f;
+    }
+}
+.prizeResult{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    .winningCloseButton{
+        width:60px;
+        height:60px;
+        position: absolute;
+        top:470px;
+        right:100px;
+    }
+    .closeButton{
+        width:60px;
+        height:60px;
+        position: absolute;
+        top:410px;
+        right:100px;
+    }
+    .resultContainer{
+        height: 900px;
+        width: 80%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 160px auto;
+        font-size:30px;
+    }
+    .resultWinning{
+        background-image:url('../../../react-externals/images/draw/pic_zhongjiang@2x.png');
+        .winnerImage{
+            width:290px;
+            height:290px;
+            margin-top:340px;
+        }
+        .winningWord{
+            margin-top:70px;
+            line-height: 44px;
+        }
+    }
+    .resultFail{
+        background-image:url('../../../react-externals/images/draw/pic_weizhongjiang@2x.png');
+        .FailWord{
+            top: 440px;
+            position: relative;
+            font-size: 36px;
+        }
+        .FailWord2{
+            margin-top: 544px;
+            line-height: 52px;
+        }
+    }
+}

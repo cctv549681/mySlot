@@ -1,0 +1,28 @@
+.am-checkbox.am-checkbox-checked .am-checkbox-inner ,.am-checkbox.am-checkbox-checked .am-checkbox-inner:after{
+    border-color: #FF5319;
+}
+.ui-loader-default{ display:none}
+.ui-mobile-viewport{ border:none;}
+.ui-page {padding: 0; margin: 0; outline: 0}
+
+.am-list-item .am-list-ripple {
+    position: absolute;
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+    will-change: box-shadow,transform;
+    -webkit-transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+.am-list-item .am-list-ripple.am-list-ripple-animate {
+    background-color: hsla(0,0%,62%,.2);
+    -webkit-animation: ripple 1s linear;
+    animation: ripple 1s linear
+}
